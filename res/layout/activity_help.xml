@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:paddingTop="32dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← 戻る"
+            android:background="@null"
+            android:textColor="#888888"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使い方"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="はじめての方へ"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- STEP 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STEP 1　メニューを登録する"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#1D9E75"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="トップ画面の「メニュー登録」を押します。\n\n「飲み物」か「食べ物」をラジオボタンで選び、商品名と販売価格を入力して「追加」を押してください。\n\nお店で扱う商品をすべて登録しましょう。登録したメニューは後から値段の変更や削除もできます。"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- STEP 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STEP 2　お客様のチームを登録する"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#1D9E75"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="「お会計管理」を押して、チーム名（例：1番テーブル）を入力して「追加」を押します。\n\nお客様のグループごとにチームを作ってください。何チームでも追加できます。"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- STEP 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STEP 3　注文を記録する"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#1D9E75"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="チームの「注文を追加する」ボタンを押します。\n\n飲み物・食べ物のボタンをタップするだけで注文が記録されます。同じボタンを何度も押すと数量が増えます。\n\n選択できたら画面下の「注文を追加する」を押してください。これを押すまでは注文は確定されません。\n\n「戻る」を押すと選択がキャンセルされます。"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- STEP 4 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STEP 4　注文を修正する"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#1D9E75"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="注文を間違えた場合はチームパネルの「内訳・修正」ボタンを押してください。\n\n各注文の横にある「＋」「−」ボタンで数量を変更できます。\n\n「削除」ボタンでその注文を削除できます。"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- STEP 5 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STEP 5　営業終了時の操作"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#1D9E75"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="営業が終わったら「お会計管理」画面右上の「本日の営業を終了する」を押します。\n\n確認が2回表示されるので、両方で「はい」を押すとその日のデータが保存されます。\n\n保存後はチームリストが空になります。翌日また使う場合は新しくチームを登録してください。\n\n※午前6時前の操作は前日の営業として記録されます。"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 会計履歴 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="売上を確認したいとき"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#185FA5"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="トップ画面の「会計履歴（月別）」を押すと月ごとの売上一覧が表示されます。\n\n月を選ぶと日別の売上が、日付を選ぶとその日の詳細が確認できます。\n\nパネルをタップすると内訳も見られます。"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 設定 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="設定について"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#888888"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="トップ画面右下の「⚙ 設定」から以下の機能をオンにできます。\n\n・消費税計算（10%）\n　オンにすると注文金額に10%を上乗せして計算します。\n\n・売上計算\n　オンにするとメニュー登録時に原価を入力できるようになります。月別会計画面で純利益も表示されます。"
+                        android:textSize="14sp"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <TextView
+        android:id="@+id/itemLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/itemAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="6dp"/>
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修正"
+        android:textColor="#185FA5"
+        android:backgroundTint="#E6F1FB"
+        android:textSize="12sp"
+        android:padding="6dp"
+        android:layout_marginEnd="4dp"/>
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="削除"
+        android:textColor="#E24B4A"
+        android:backgroundTint="#FFEEEE"
+        android:textSize="12sp"
+        android:padding="6dp"/>
+
+</LinearLayout>

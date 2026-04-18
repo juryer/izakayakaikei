@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="居酒屋会計"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Izakayakaikei">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AccountingActivity" />
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".MenuSettingsActivity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".MonthlyActivity" />
+        <activity android:name=".DayDetailActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".EditOrderActivity" />
+        <activity android:name=".TeamDetailActivity" />
+        <activity android:name=".HistoryDetailActivity" />
+        <activity android:name=".MonthListActivity" />
+    </application>
+</manifest>
