@@ -42,3 +42,11 @@
 
 実際に使ってもらう想定のユーザーから要望をヒアリングしながら、仕様を決めて開発しました。  
 はじめてのAndroid開発でしたが、既存のJava知識を活かしながら取り組みました。
+
+---
+## スクリーンショット
+
+<img src="https://github.com/user-attachments/assets/895575e9-b1f3-4d76-af20-1ba26889804f" width="20%">
+<img src="https://github.com/user-attachments/assets/1d9cc194-9f59-4f2c-9435-1b7e22302835" width="20%">
+<img src="https://github.com/user-attachments/assets/006be5b9-22f9-45d4-8ebc-62f97d7be717" width="20%">
+
